@@ -26,14 +26,14 @@ namespace minecreeper
 
         public void Step() 
         {
-            if (IsFlagged == false && HasBeenSteppedOn == false)
+            if (IsFlagged == false)
             {
                 HasExploded = HasMine;
                 HasBeenSteppedOn = true;
             }
             else
             {
-                Console.WriteLine("ERROR: You cannot step on a cell which has been flagged/already stepped on.");
+                Console.WriteLine("ERROR: You cannot step on a cell which has been flagged.");
                 Console.WriteLine("");
             }
         }

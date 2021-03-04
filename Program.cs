@@ -6,7 +6,7 @@ namespace minecreeper
     {
         static void Main(string[] args)
         {
-            GameBoard board = new GameBoard(5);
+            GameBoard board = new GameBoard(10);
             GameRenderer renderer = new GameRenderer(board);
             renderer.DebugView=false;
 

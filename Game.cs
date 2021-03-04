@@ -44,7 +44,7 @@ namespace minecreeper {
                     if (currentCell.HasExploded) {
                         System.Console.WriteLine("You died");
                         GameRenderer.Draw();
-                        //gameComplete = true;
+                        gameComplete = true;
                     }
                 }
             }

@@ -127,8 +127,14 @@ namespace minecreeper
         public Cell Step(int row, int column) {
             int position = GetPositionFromRowAndCol(row,column); 
             Cell currentCell = Cells[position];
-            ModifyCellNeighbours(row, column, StepOnNeighbour);
-            currentCell.Step();
+            if (currentCell.HasBeenSteppedOn == false)
+            {
+                ModifyCellNeighbours(row, column, StepOnNeighbour);
+                currentCell.Step();
+            } else
+            {
+                Console.WriteLine("ERROR: You cannot step on a cell which has already been stepped on.");
+            }
             return currentCell;
         }
 
@@ -148,8 +154,8 @@ namespace minecreeper
         {
             Cell neighbourCell = Cells[position];
             if (currentCell.HasMine == false &&
+                currentCell.IsFlagged ==  false &&
                 neighbourCell.HasMine == false &&
-                neighbourCell.NeighbouringMines == 0 &&
                 neighbourCell.HasBeenSteppedOn == false &&
                 neighbourCell.IsFlagged == false)
             {

@@ -17,18 +17,14 @@ namespace minecreeper {
                 */
                 if (currentCell.IsFlagged) {
                     cellContent += "F";
-                } else {
-                    cellContent += "";
-                }
-                
-                if (currentCell.HasBeenSteppedOn || DebugView) {
+                } else if (currentCell.HasBeenSteppedOn || DebugView) {
                     if (currentCell.HasExploded) {
                         cellContent += "*";
                     } else {
                         cellContent += currentCell.NeighbouringMines + "";
                     }
                 } else {
-                    cellContent += "";
+                    cellContent += " ";
                 }
 
                 cellContent += "]";
