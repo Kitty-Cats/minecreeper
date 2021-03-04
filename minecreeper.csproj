@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="notobj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.AssemblyInfo.cs" />
+    <Compile Remove="notobj\TTDebug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="notobj\Debug\netcoreapp3.1\minecreeper.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="notobj\.DS_Store" />
+    <None Remove="notobj\Debug\.DS_Store" />
+    <None Remove="notobj\project.nuget.cache" />
+    <None Remove="notobj\minecreeper.csproj.nuget.g.targets" />
+    <None Remove="notobj\minecreeper.csproj.nuget.g.props" />
+    <None Remove="notobj\project.assets.json" />
+    <None Remove="notobj\minecreeper.csproj.nuget.dgspec.json" />
+    <None Remove="notobj\TTDebug\.DS_Store" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.pdb" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.csproj.FileListAbsolute.txt" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.csproj.CoreCompileInputs.cache" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.dll" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.assets.cache" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.genruntimeconfig.cache" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.AssemblyInfoInputs.cache" />
+    <None Remove="notobj\TTDebug\netcoreapp3.1\minecreeper.csprojAssemblyReference.cache" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.pdb" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.csproj.FileListAbsolute.txt" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.csproj.CoreCompileInputs.cache" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.dll" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.assets.cache" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.genruntimeconfig.cache" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.AssemblyInfoInputs.cache" />
+    <None Remove="notobj\Debug\netcoreapp3.1\minecreeper.csprojAssemblyReference.cache" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper.runtimeconfig.dev.json" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper.pdb" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper.deps.json" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper.runtimeconfig.json" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper.dll" />
+    <None Remove="notbin\Debug\netcoreapp3.1\minecreeper" />
+  </ItemGroup>
+</Project>
