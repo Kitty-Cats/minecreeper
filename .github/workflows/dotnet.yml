@@ -27,9 +27,9 @@ jobs:
       uses: actions/upload-artifact@v2.2.3
       with:
         # Artifact name
-        name: minecreeper-build# optional, default is artifact
+        name: minecreeper-build
         # A file, directory or wildcard pattern that describes what to upload
-        path: ./bin/Debug/netcoreapp3.1/minecreeper
+        path: ./bin/Debug/netcoreapp3.1/
         # The desired behavior if no files are found using the provided path.
     #Available Options:
       #warn: Output a warning but do not fail the action
